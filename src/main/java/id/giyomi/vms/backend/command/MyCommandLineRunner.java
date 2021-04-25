@@ -209,26 +209,68 @@ public class MyCommandLineRunner implements CommandLineRunner {
         SecurityContextHolder.getContext().setAuthentication(authentication);
 
         Role roleStaff = roleRepository.save(new Role("staff"));
+        roleStaff.getHaks().add(hakUser);
+        roleRepository.save(roleStaff);
 
-//        User userStaff1 = userRepository.save(
-//                new User(
-//                        "staff1",
-//                        PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("pass_staff1"),
-//                        "staff1@gmail.com",
-//                        "081231684642",
-//                        "http://scontent-sin6-2.cdninstagram.com/v/t51.2885-15/e35/35000952_259532818125171_5138521924023877632_n.jpg?_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=103&_nc_ohc=DYWbkkRqEYoAX-rXf88&oh=867b44d6abcbb99c7da605782685a01e&oe=5E9B706B",
-//                        roleStaff
-//                )
-//        );
-//        User userStaff2 = userRepository.save(
-//                new User(
-//                        "staff2",
-//                        PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("pass_staff2"),
-//                        "staff12@gmail.com",
-//                        "081231684642",
-//                        "http://scontent-sin6-2.cdninstagram.com/v/t51.2885-15/e35/35000952_259532818125171_5138521924023877632_n.jpg?_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=103&_nc_ohc=DYWbkkRqEYoAX-rXf88&oh=867b44d6abcbb99c7da605782685a01e&oe=5E9B706B",
-//                        roleStaff
-//                )
-//        );
+        User userStaff1 = userRepository.save(
+                new User(
+                        "staff1",
+                        PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("pass_staff1"),
+                        "staff1@gmail.com",
+                        "081231684642",
+                        "http://scontent-sin6-2.cdninstagram.com/v/t51.2885-15/e35/35000952_259532818125171_5138521924023877632_n.jpg?_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=103&_nc_ohc=DYWbkkRqEYoAX-rXf88&oh=867b44d6abcbb99c7da605782685a01e&oe=5E9B706B",
+                        roleStaff
+                )
+        );
+        User userStaff2 = userRepository.save(
+                new User(
+                        "staff2",
+                        PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("pass_staff2"),
+                        "staff12@gmail.com",
+                        "081231684642",
+                        "http://scontent-sin6-2.cdninstagram.com/v/t51.2885-15/e35/35000952_259532818125171_5138521924023877632_n.jpg?_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=103&_nc_ohc=DYWbkkRqEYoAX-rXf88&oh=867b44d6abcbb99c7da605782685a01e&oe=5E9B706B",
+                        roleStaff
+                )
+        );
+        User userStaff3 = userRepository.save(
+                new User(
+                        "staff3",
+                        PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("pass_staff3"),
+                        "staff3@gmail.com",
+                        "081231684642",
+                        "http://scontent-sin6-2.cdninstagram.com/v/t51.2885-15/e35/35000952_259532818125171_5138521924023877632_n.jpg?_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=103&_nc_ohc=DYWbkkRqEYoAX-rXf88&oh=867b44d6abcbb99c7da605782685a01e&oe=5E9B706B",
+                        roleStaff
+                )
+        );
+        User userStaff4 = userRepository.save(
+                new User(
+                        "staff4",
+                        PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("pass_staff4"),
+                        "staff14@gmail.com",
+                        "081231684642",
+                        "http://scontent-sin6-2.cdninstagram.com/v/t51.2885-15/e35/35000952_259532818125171_5138521924023877632_n.jpg?_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=103&_nc_ohc=DYWbkkRqEYoAX-rXf88&oh=867b44d6abcbb99c7da605782685a01e&oe=5E9B706B",
+                        roleStaff
+                )
+        );
+        User userStaff5 = userRepository.save(
+                new User(
+                        "staff5",
+                        PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("pass_staff4"),
+                        "staff14@gmail.com",
+                        "081231684642",
+                        "http://scontent-sin6-2.cdninstagram.com/v/t51.2885-15/e35/35000952_259532818125171_5138521924023877632_n.jpg?_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=103&_nc_ohc=DYWbkkRqEYoAX-rXf88&oh=867b44d6abcbb99c7da605782685a01e&oe=5E9B706B",
+                        roleStaff
+                )
+        );
+        User userStaff6 = userRepository.save(
+                new User(
+                        "staff5",
+                        PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("pass_staff6"),
+                        "staff14@gmail.com",
+                        "081231684642",
+                        "http://scontent-sin6-2.cdninstagram.com/v/t51.2885-15/e35/35000952_259532818125171_5138521924023877632_n.jpg?_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=103&_nc_ohc=DYWbkkRqEYoAX-rXf88&oh=867b44d6abcbb99c7da605782685a01e&oe=5E9B706B",
+                        roleStaff
+                )
+        );
     }
 }

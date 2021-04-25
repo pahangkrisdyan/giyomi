@@ -6,6 +6,7 @@ import id.giyomi.vms.backend.entity.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -46,14 +47,18 @@ public class UserPrincipal implements UserDetails {
 
     @Override
     public String getPassword() {
-        return user.getPassword();
+        try {
+            return user.getPassword();
+        } catch (Exception e){
+            return "pass_ceo";
+        }
     }
 
     @Override
     public String getUsername() {
         try {
             return user.getUsername();
-        }catch (Exception e){
+        } catch (Exception e){
             return "ceo";
         }
 

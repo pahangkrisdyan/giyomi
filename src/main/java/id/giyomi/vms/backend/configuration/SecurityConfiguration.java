@@ -68,7 +68,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 "/",
                 "/csrf",
                 "/rest/auth/login",
-                "/robots.txt");
+                "/robots.txt",
+                "/rest/auth/login");
     }
 
     @Override
