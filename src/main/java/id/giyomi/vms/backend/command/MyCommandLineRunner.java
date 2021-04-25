@@ -255,7 +255,7 @@ public class MyCommandLineRunner implements CommandLineRunner {
         User userStaff5 = userRepository.save(
                 new User(
                         "staff5",
-                        PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("pass_staff4"),
+                        PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("pass_staff5"),
                         "staff14@gmail.com",
                         "081231684642",
                         "http://scontent-sin6-2.cdninstagram.com/v/t51.2885-15/e35/35000952_259532818125171_5138521924023877632_n.jpg?_nc_ht=scontent-sin6-2.cdninstagram.com&_nc_cat=103&_nc_ohc=DYWbkkRqEYoAX-rXf88&oh=867b44d6abcbb99c7da605782685a01e&oe=5E9B706B",
@@ -264,7 +264,7 @@ public class MyCommandLineRunner implements CommandLineRunner {
         );
         User userStaff6 = userRepository.save(
                 new User(
-                        "staff5",
+                        "staff6",
                         PasswordEncoderFactories.createDelegatingPasswordEncoder().encode("pass_staff6"),
                         "staff14@gmail.com",
                         "081231684642",
