@@ -33,7 +33,7 @@ public class RestCdnController {
     @PostMapping()
     public ResponseEntity<CdnUploadResponse> handleFileUpload(@RequestParam("file") MultipartFile file) {
         String fileName = fileSystemStorageService.store(file);
-        return ResponseEntity.ok(new CdnUploadResponse("http://" + baseUrl + "/rest/cdn/" + fileName));
+        return ResponseEntity.ok(new CdnUploadResponse("https://" + baseUrl + "/rest/cdn/" + fileName));
     }
 
     @GetMapping(
