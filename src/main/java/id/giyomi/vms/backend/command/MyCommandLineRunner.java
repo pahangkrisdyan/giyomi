@@ -85,9 +85,9 @@ public class MyCommandLineRunner implements CommandLineRunner {
     public void run(String... args) throws Exception {
         String ip = InetAddress.getLocalHost().getHostAddress();
         System.out.println("Running at => " + ip);
-        initUser();
-        initData();
-        modeShowJwtCeo();
+//        initUser();
+//        initData();
+//        modeShowJwtCeo();
 
     }
 
